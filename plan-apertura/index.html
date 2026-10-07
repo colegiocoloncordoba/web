@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú del comedor · CEIP Colón</title>
+<title>Menú del comedor · Octubre · CEIP Colón</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
@@ -15,325 +15,223 @@
     font-style:normal;
     font-display:swap;
   }
-  :root{
-    --mustard:#F5A623;
-    --mustard-dark:#D98E15;
-    --navy:#1D5C97;
-    --green:#00A896;
-    --teal:#46BFC5;
-    --coral:#F0576C;
-    --salmon:#F4876B;
-    --cream:#FFFDF9;
-    --ink:#20303F;
-    --ink-soft:#5A6A78;
-    --line: rgba(32,48,63,0.14);
-    --line-strong: rgba(32,48,63,0.26);
-  }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
-    background:var(--cream);
-    color:var(--ink);
+    background:#FFFDF9;
+    color:#20303F;
     font-family:'Nunito',sans-serif;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,.display{
+  h1,h2,h3{
     font-family:'Carnero','Nunito',sans-serif;
     font-weight:700;
-    color:#fff;
+    color:#20303F;
     margin:0;
     letter-spacing:0.01em;
   }
-  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+  .ceipcolon-menu{max-width:1080px;margin:0 auto;padding:0 20px 40px;}
 
   /* ---------- HERO ---------- */
-  .hero{
-    background:var(--mustard);
-    padding:44px 0 40px;
+  .ceipcolon-menu .hero{
+    background:#F5A623;
+    border-radius:0 0 28px 28px;
+    padding:36px 28px 32px;
+    margin:0 -20px 28px;
   }
-  .hero-inner{display:flex; align-items:center; justify-content:flex-start; gap:28px; flex-wrap:wrap;}
-  .hero-eyebrow{
-    font-size:0.95rem; font-weight:700; color:rgba(32,24,10,0.6); margin-bottom:8px;
-  }
-  .hero h1{font-size:clamp(2rem, 4.5vw, 3.1rem); line-height:1.08; color:#fff; text-shadow:0 2px 0 rgba(0,0,0,0.06);}
-  .hero .dates{
-    font-family:'Nunito',sans-serif; font-weight:700; font-size:1.05rem; color:#20303F; margin-top:12px;
-  }
+  .ceipcolon-menu .hero-eyebrow{font-size:0.9rem; font-weight:700; color:rgba(32,24,10,0.6); margin-bottom:6px;}
+  .ceipcolon-menu .hero h1{font-size:clamp(1.9rem, 4.5vw, 2.6rem); color:#fff;}
+  .ceipcolon-menu .hero .dates{font-weight:800; font-size:1rem; color:#20303F; margin-top:10px;}
 
-  /* ---------- NAV / WEEK TABS ---------- */
-  .weeks-nav{
-    position:sticky; top:0; z-index:5;
-    background:var(--cream);
-    border-bottom:3px solid var(--mustard);
-    padding:16px 0;
+  /* ---------- VARIANT SWITCH ---------- */
+  .ceipcolon-menu .variant-switch{
+    display:flex; gap:8px; margin-bottom:18px; flex-wrap:wrap;
   }
-  .tabs{display:flex; gap:10px; overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none;}
-  .tabs::-webkit-scrollbar{display:none;}
-  .tab{
-    flex:0 0 auto;
-    border:2px solid var(--mustard);
-    background:#fff;
-    color:var(--mustard-dark);
-    font-family:'Nunito', sans-serif;
-    font-weight:800;
-    font-size:0.95rem;
-    padding:9px 20px;
-    border-radius:999px;
-    cursor:pointer;
-    text-align:left;
-    transition:background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  .ceipcolon-menu .variant-btn{
+    flex:1; min-width:150px;
+    border:2px solid #F5A623; background:#fff; color:#D98E15;
+    font-family:'Nunito',sans-serif; font-weight:800; font-size:0.92rem;
+    padding:10px 16px; border-radius:999px; cursor:pointer; text-align:center;
   }
-  .tab span{display:block; font-weight:600; font-size:0.76rem; color:var(--ink-soft); margin-top:1px;}
-  .tab.active{background:var(--mustard); color:#fff;}
-  .tab.active span{color:rgba(255,255,255,0.9);}
-  .tab:hover:not(.active){transform:translateY(-1px);}
+  .ceipcolon-menu .variant-btn.active{background:#F5A623; color:#fff;}
 
-  /* ---------- SECTION LABELS ---------- */
-  section{padding:44px 0;}
-  .section-head{display:flex; align-items:baseline; gap:14px; margin-bottom:22px;}
-  .section-head h2{font-size:1.5rem; color:var(--ink);}
-  .section-head .rule{flex:1; height:3px; background:var(--mustard); border-radius:3px;}
+  /* ---------- WEEK TABS ---------- */
+  .ceipcolon-menu .weeks-nav{
+    position:sticky; top:0; z-index:5; background:#FFFDF9;
+    border-bottom:3px solid #F5A623; padding:14px 0; margin-bottom:22px;
+  }
+  .ceipcolon-menu .tabs{display:flex; gap:8px; overflow-x:auto; -ms-overflow-style:none; scrollbar-width:none;}
+  .ceipcolon-menu .tabs::-webkit-scrollbar{display:none;}
+  .ceipcolon-menu .tab{
+    flex:0 0 auto; border:2px solid #1D5C97; background:#fff; color:#1D5C97;
+    font-family:'Nunito', sans-serif; font-weight:800; font-size:0.9rem;
+    padding:8px 18px; border-radius:999px; cursor:pointer;
+  }
+  .ceipcolon-menu .tab span{display:block; font-weight:600; font-size:0.72rem; color:#5A6A78; margin-top:1px;}
+  .ceipcolon-menu .tab.active{background:#1D5C97; color:#fff;}
+  .ceipcolon-menu .tab.active span{color:rgba(255,255,255,0.85);}
 
   /* ---------- DAY CARDS ---------- */
-  .days-grid{
-    display:grid;
-    grid-template-columns:repeat(5, 1fr);
-    gap:16px;
-  }
-  @media (max-width:900px){ .days-grid{grid-template-columns:1fr 1fr;} }
-  @media (max-width:560px){ .days-grid{grid-template-columns:1fr;} }
+  .ceipcolon-menu .days-grid{display:grid; grid-template-columns:repeat(5, 1fr); gap:14px;}
+  @media (max-width:900px){ .ceipcolon-menu .days-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .ceipcolon-menu .days-grid{grid-template-columns:1fr;} }
 
-  .day-card{
-    background:#fff;
-    border:2px solid var(--line);
-    border-radius:18px;
-    display:flex; flex-direction:column;
-    overflow:hidden;
-    box-shadow:0 2px 0 var(--line);
+  .ceipcolon-menu .day-card{
+    background:#fff; border:2px solid rgba(32,48,63,0.14); border-radius:16px;
+    display:flex; flex-direction:column; overflow:hidden; box-shadow:0 2px 0 rgba(32,48,63,0.08);
   }
-  .day-card .day-name{
-    color:#fff;
-    font-family:'Carnero','Nunito',sans-serif;
-    font-weight:700;
-    font-size:1rem;
-    padding:10px 14px;
-  }
-  .day-card .comedor{padding:14px 14px 12px; flex:1;}
-  .dish{margin-bottom:10px;}
-  .dish .num{
-    display:inline-block; font-weight:800; color:var(--coral); font-size:0.8rem; margin-right:4px;
-  }
-  .dish p{margin:2px 0 0; font-size:0.92rem;}
-  .allergens{display:flex; flex-wrap:wrap; gap:5px; margin-top:6px;}
-  .allergen{
-    font-size:0.68rem; font-weight:700;
-    color:var(--navy);
-    border:1.5px solid var(--teal);
-    border-radius:999px;
-    padding:2px 8px;
-    background:rgba(70,191,197,0.12);
-  }
-  .extras{font-size:0.85rem; font-weight:700; color:var(--ink-soft); margin-top:10px; border-top:1px dashed var(--line-strong); padding-top:8px;}
-  .no-comedor{padding:14px; font-size:0.88rem; color:var(--ink-soft); font-style:italic; flex:1;}
+  .ceipcolon-menu .day-name{color:#fff; font-family:'Carnero','Nunito',sans-serif; font-weight:700; font-size:0.98rem; padding:9px 12px;}
+  .ceipcolon-menu .comedor{padding:12px 12px 10px; flex:1;}
+  .ceipcolon-menu .dish{margin-bottom:10px;}
+  .ceipcolon-menu .dish .num{font-weight:800; color:#F0576C; font-size:0.75rem; margin-right:3px;}
+  .ceipcolon-menu .dish p{display:inline; margin:0; font-size:0.88rem;}
+  .ceipcolon-menu .dish .method{display:block; font-size:0.65rem; font-weight:800; color:#1D5C97; margin-top:2px; letter-spacing:0.02em;}
+  .ceipcolon-menu .extras{font-size:0.78rem; font-weight:700; color:#5A6A78; margin-top:8px; border-top:1px dashed rgba(32,48,63,0.22); padding-top:7px;}
+  .ceipcolon-menu .no-comedor{padding:14px; font-size:0.86rem; color:#5A6A78; font-style:italic; flex:1;}
+  .ceipcolon-menu .cena{background:rgba(244,135,108,0.14); border-top:2px dashed rgba(32,48,63,0.22); padding:10px 12px 12px;}
+  .ceipcolon-menu .cena .tag{font-size:0.7rem; font-weight:800; color:#D9652F; margin-bottom:4px;}
+  .ceipcolon-menu .cena p{margin:0; font-size:0.82rem; color:#20303F;}
 
-  .day-card .cena{
-    background:rgba(244,135,108,0.12);
-    border-top:2px dashed var(--line-strong);
-    padding:12px 14px 14px;
-  }
-  .cena .tag{
-    font-size:0.72rem; font-weight:800; color:var(--salmon);
-    display:flex; align-items:center; gap:5px; margin-bottom:5px;
-  }
-  .cena .tag svg{width:13px; height:13px;}
-  .cena p{margin:0; font-size:0.86rem; color:var(--ink);}
+  .ceipcolon-menu .legend{margin-top:20px; font-size:0.85rem; color:#5A6A78;}
 
-  .legend{
-    margin-top:22px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;
-    font-size:0.85rem; color:var(--ink-soft); font-weight:700;
+  .ceipcolon-menu .fruit-strip{
+    background:#00A896; border-radius:18px; padding:18px 22px; margin-top:28px;
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  }
+  .ceipcolon-menu .fruit-strip h3{font-size:1rem; color:#fff; flex-shrink:0;}
+  .ceipcolon-menu .fruit-strip p{margin:0; color:#fff; font-size:0.9rem;}
+
+  .ceipcolon-menu .note{
+    background:rgba(245,166,35,0.12); border:2px dashed #D98E15; border-radius:16px;
+    padding:14px 18px; font-size:0.88rem; margin-top:18px; font-weight:600;
   }
 
-  /* ---------- FRUIT STRIP ---------- */
-  .fruit-strip{
-    background:var(--green);
-    padding:22px 0;
-  }
-  .fruit-strip .wrap{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
-  .fruit-strip h3{font-size:1.05rem; flex-shrink:0; color:#fff; font-family:'Nunito',sans-serif; font-weight:800;}
-  .fruit-list{display:flex; flex-wrap:wrap; gap:8px; font-size:0.9rem;}
-  .fruit-list span{
-    border:none; border-radius:999px; padding:5px 14px; background:rgba(255,255,255,0.22); color:#fff; font-weight:700;
-  }
-
-  /* ---------- HABITS ---------- */
-  .habits-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
-  @media (max-width:720px){ .habits-grid{grid-template-columns:1fr;} }
-  .habit-card{
-    border-radius:20px; padding:24px 26px; color:#fff;
-  }
-  .habit-card.a{background:var(--navy);}
-  .habit-card.b{background:var(--coral);}
-  .habit-card .icon{width:34px; height:34px; margin-bottom:10px;}
-  .habit-card h3{font-size:1.1rem; margin-bottom:12px; color:#fff;}
-  .habit-card ul{margin:0; padding-left:18px;}
-  .habit-card li{margin-bottom:9px; font-size:0.93rem; color:rgba(255,255,255,0.96);}
-  .habit-card li::marker{color:rgba(255,255,255,0.7);}
-
-  /* ---------- FOOTER ---------- */
-  footer{padding:26px 0 40px;}
-  .note{
-    background:rgba(245,166,35,0.12);
-    border:2px dashed var(--mustard-dark);
-    border-radius:16px;
-    padding:14px 18px;
-    font-size:0.9rem;
-    margin-bottom:16px;
-    font-weight:600;
-  }
-  .fineprint{font-size:0.8rem; color:var(--ink-soft);}
-
-  .fade-in{animation:fadeIn 0.35s ease;}
+  .fade-in{animation:fadeIn 0.3s ease;}
   @keyframes fadeIn{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);}}
 </style>
 </head>
 <body>
 
-<div class="hero">
-  <div class="wrap hero-inner">
-    <div>
-      <div class="hero-eyebrow">C.E.I.P. Colón · Creciendo contigo</div>
-      <h1>Menú del comedor</h1>
-      <div class="dates">7 de septiembre — 2 de octubre de 2026</div>
-    </div>
+<div class="ceipcolon-menu">
+  <div class="hero">
+    <div class="hero-eyebrow">C.E.I.P. Colón · Creciendo contigo</div>
+    <h1>Menú del comedor — Octubre</h1>
+    <div class="dates">Octubre 2026</div>
   </div>
-</div>
 
-<div class="weeks-nav">
-  <div class="wrap tabs" id="tabs"></div>
-</div>
+  <div class="variant-switch" id="variant-switch"></div>
 
-<section class="wrap" id="menu-section">
-  <div class="section-head"><h2 style="color:var(--ink)">Comedor y cena en casa</h2><div class="rule"></div></div>
+  <div class="weeks-nav">
+    <div class="tabs" id="tabs"></div>
+  </div>
+
   <div class="days-grid fade-in" id="days-grid"></div>
-  <div class="legend">
-    <strong style="color:var(--ink)">Contiene:</strong>
-    <span class="allergen">Gluten</span><span class="allergen">Pescado</span><span class="allergen">Crustáceos</span>
-    <span class="allergen">Moluscos</span><span class="allergen">Huevo</span><span class="allergen">Leche</span>
-    <span class="allergen">Sulfitos</span>
-  </div>
-</section>
 
-<div class="fruit-strip">
-  <div class="wrap">
-    <h3>Fruta fresca de temporada</h3>
-    <div class="fruit-list">
-      <span>Sandía</span><span>Melón</span><span>Melocotón</span><span>Pera</span><span>Manzana</span><span>Plátano</span><span>Uvas</span>
-    </div>
+  <div class="legend">
+    <strong>Las cenas son orientativas.</strong> Las propuestas de empanadas o empanadillas pueden cocinarse al horno en casa.
+  </div>
+
+  <div class="fruit-strip">
+    <h3>🍇 Fruta fresca</h3>
+    <p>Plátano, pera, manzana, naranja y mandarina, según el grado de madurez.</p>
+  </div>
+
+  <div class="note">
+    ¿Dietas especiales? Las familias que lo necesiten pueden comunicarlo en dirección para preparar un menú alternativo compatible. Se sirve agua diariamente en el comedor.
   </div>
 </div>
-
-<section class="wrap">
-  <div class="section-head"><h2 style="color:var(--ink)">Hábitos saludables en casa</h2><div class="rule"></div></div>
-  <div class="habits-grid">
-    <div class="habit-card a">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-10 11z"/></svg>
-      <h3>En la mesa</h3>
-      <ul>
-        <li>Reservar tiempo suficiente para comer sentados y charlar, sin prisa.</li>
-        <li>Aprovechar la comida para hablar del día, sin móvil ni televisión de por medio.</li>
-        <li>No usar la comida como premio, consuelo o castigo.</li>
-        <li>Dejar que prueben y mastiquen con calma: comer bien también se aprende en casa.</li>
-      </ul>
-    </div>
-    <div class="habit-card b">
-      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7z"/></svg>
-      <h3>En movimiento</h3>
-      <ul>
-        <li>Al menos 60 minutos de actividad física moderada casi todos los días.</li>
-        <li>Dos días por semana, ejercicios que trabajen fuerza y flexibilidad.</li>
-        <li>No más de una hora diaria de pantallas (móvil, tablet, videojuegos).</li>
-        <li>El ejemplo en casa cuenta: los hábitos activos de la familia se contagian.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<footer class="wrap">
-  <div class="note">
-    ¿Alergias o intolerancias? Las familias que necesiten un menú especial pueden comunicarlo en dirección para preparar una alternativa compatible.
-  </div>
-  <div class="fineprint">Este menú podría sufrir alguna variación si una circunstancia ajena a nuestra voluntad lo hiciera aconsejable. Servicio de comedor escolar — CEIP Colón, Córdoba.</div>
-</footer>
 
 <script>
-const dayColors = ['#F5A623', '#46BFC5', '#F0576C', '#1D5C97', '#00A896'];
+const DAY_COLORS = ['#F5A623', '#46BFC5', '#F0576C', '#1D5C97', '#00A896'];
 
-const weeks = [
-  {
-    label: "Semana 1", range: "7 – 11 sept",
-    days: [
-      { name:"Lunes", comedor:{ p1:{text:"Ensalada de pasta con tomate, zanahoria, maíz y atún", all:["Gluten","Pescado","Sulfitos"]}, p2:{text:"Carrillada de cerdo guisada con judía verde, zanahoria, champiñón y cebolla", all:["Sulfitos"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Pescado blanco al horno/plancha con puré de patatas y verduras salteadas. Pan, fruta y agua." },
-      { name:"Martes", comedor:{ p1:{text:"Ensaladilla rusa (patata, zanahoria, judía verde, guisantes, atún y mahonesa)", all:["Pescado","Huevo"]}, p2:{text:"Bacalao frito y tomate aliñado", all:["Pescado","Gluten","Sulfitos"]}, extras:"Pan blanco · Postre lácteo" },
-        cena:"Sopa de arroz. Huevos rellenos de atún y tomate. Pan, lácteo y agua." },
-      { name:"Miércoles", comedor:null, cena:"Pollo empanado al horno y ensalada de lechuga. Pan, fruta y agua." },
-      { name:"Jueves", comedor:null, cena:"Pollo o pavo al horno/plancha y tomate aliñado con queso fresco. Pan, lácteo y agua." },
-      { name:"Viernes", comedor:null, cena:"Crema de verduras con picatostes y tortilla francesa. Pan, fruta y agua." },
-    ]
-  },
-  {
-    label: "Semana 2", range: "14 – 18 sept",
-    days: [
-      { name:"Lunes", comedor:{ p1:{text:"Crema de zanahoria, patata y cebolla", all:[]}, p2:{text:"Pinchos de pollo a la plancha y ensalada de lechuga", all:["Sulfitos"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Pescado blanco al horno/plancha y tomate aliñado con aguacate. Pan, fruta y agua." },
-      { name:"Martes", comedor:{ p1:{text:"Lentejas guisadas con tomate, patata, zanahoria, calabaza, pimiento y cebolla", all:[]}, p2:{text:"Rosada al horno en salsa verde", all:["Pescado","Sulfitos"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Tortilla francesa con verduras rehogadas. Pan, lácteo y agua." },
-      { name:"Miércoles", comedor:{ p1:{text:"Cazuela de fideos integrales con calamares, cazón, almeja, mejillón, cebolla, tomate, guisantes y pimiento", all:["Gluten","Pescado","Crustáceos","Moluscos","Sulfitos"]}, p2:{text:"Revuelto de huevo y cebolla, ensalada de lechuga y maíz", all:["Huevo","Sulfitos"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Pisto de verduras con huevo. Pan, fruta y agua." },
-      { name:"Jueves", comedor:{ p1:{text:"Cocido de garbanzos con patata, zanahoria, gallina y carne magra de ternera", all:[]}, p2:{text:"Ensalada de lechuga, pepino y queso fresco", all:["Leche","Sulfitos"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Pollo o pavo al horno/plancha y ensalada de lechuga y pepino. Pan, lácteo y agua." },
-      { name:"Viernes", comedor:{ p1:{text:"Arroz guisado con pollo, tomate, cebolla y pimiento", all:["Sulfitos"]}, p2:{text:"Revuelto de huevo y atún", all:["Huevo","Pescado"]}, extras:"Pan blanco · Postre lácteo" },
-        cena:"Sopa de arroz y varitas de pescado al horno. Pan, fruta y agua." },
-    ]
-  },
-  {
-    label: "Semana 3", range: "21 – 25 sept",
-    days: [
-      { name:"Lunes", comedor:{ p1:{text:"Ensaladilla rusa (patata, zanahoria, judía verde, guisantes, atún y mahonesa)", all:["Pescado","Huevo"]}, p2:{text:"Lomo de cerdo a la plancha y tomate aliñado", all:["Sulfitos"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Pescado blanco al horno/plancha y ensalada de lechuga y tomate. Pan, fruta y agua." },
-      { name:"Martes", comedor:{ p1:{text:"Ensalada de lechuga, caballa, zanahoria, tomate y maíz", all:["Pescado","Sulfitos"]}, p2:{text:"Pasta integral con pollo y salsa de tomate frito", all:["Gluten"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Crema de verduras con picatostes y huevo revuelto con queso. Pan, lácteo y agua." },
-      { name:"Miércoles", comedor:{ p1:{text:"Arroz 3 delicias (salteado con huevo, zanahoria y maíz)", all:["Huevo"]}, p2:{text:"Merluza al horno en salsa de tomate y ensalada de lechuga", all:["Pescado","Sulfitos"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Hamburguesa casera de pollo con queso, tomate y lechuga. Pan, fruta y agua." },
-      { name:"Jueves", comedor:{ p1:{text:"Potaje de alubias con patata, zanahoria, tomate, pimiento y cebolla", all:[]}, p2:{text:"Revuelto de huevo y queso, ensalada de lechuga, zanahoria y tomate", all:["Huevo","Leche","Sulfitos"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Pisto de verduras y tortilla de patatas. Pan, lácteo y agua." },
-      { name:"Viernes", comedor:{ p1:{text:"Pollo asado al horno con patatas fritas", all:[]}, p2:{text:"Ensalada de lechuga y pepino", all:["Sulfitos"]}, extras:"Pan blanco · Postre lácteo" },
-        cena:"Carne magra de cerdo o ternera con patatas y ensalada de lechuga. Pan, fruta y agua." },
-    ]
-  },
-  {
-    label: "Semana 4", range: "28 sept – 2 oct",
-    days: [
-      { name:"Lunes", comedor:{ p1:{text:"Ensalada de pasta con tomate, zanahoria, maíz y atún", all:["Gluten","Pescado","Sulfitos"]}, p2:{text:"Revuelto de huevo y cebolla", all:["Huevo"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Pollo o pavo al horno/plancha con guarnición de verduras. Pan, fruta y agua." },
-      { name:"Martes", comedor:{ p1:{text:"Estofado de patatas con carne magra de ternera, tomate, cebolla y pimiento", all:[]}, p2:{text:"Empanadillas de atún al horno y ensalada de lechuga", all:["Pescado","Gluten","Sulfitos"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Arroz tres delicias (tortilla, jamón cocido y zanahoria). Pan, lácteo y agua." },
-      { name:"Miércoles", comedor:{ p1:{text:"Potaje de garbanzos con patata, zanahoria, tomate, pimiento, cebolla y chorizo", all:["Sulfitos"]}, p2:{text:"Rosada al horno en salsa de limón", all:["Pescado"]}, extras:"Pan blanco · Fruta fresca de temporada" },
-        cena:"Pescado blanco al horno/plancha, puré de patatas y ensalada de lechuga. Pan, fruta y agua." },
-      { name:"Jueves", comedor:{ p1:{text:"Crema de calabaza, calabacín, patata y cebolla", all:[]}, p2:{text:"Patatas fritas revueltas con huevo", all:["Huevo"]}, extras:"Pan integral · Fruta fresca de temporada" },
-        cena:"Tortilla de patatas y tomate aliñado con aguacate. Pan, lácteo y agua." },
-      { name:"Viernes", comedor:{ p1:{text:"Arroz integral cocido con salsa de tomate frito", all:[]}, p2:{text:"Merluza al horno y ensalada de lechuga y tomate", all:["Pescado","Sulfitos"]}, extras:"Pan blanco · Postre lácteo" },
-        cena:"Pizza casera con tomate, queso, champiñones, cebolla y pollo. Pan, fruta y agua." },
-    ]
-  },
-];
+function D(name, p1, p1m, p2, p2m, extras, cena){
+  return { name, comedor: { p1: [p1, p1m], p2: [p2, p2m], extras }, cena };
+}
+function Festivo(name){ return { name, comedor: null, cena: null }; }
 
-const tabsEl = document.getElementById('tabs');
-const gridEl = document.getElementById('days-grid');
+const DATA = {
+  general: [
+    { label:"Semana 1", range:"5 – 9 oct", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan blanco y fruta","Pescado / ensalada / lácteo"),
+      D("Martes","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan integral y fruta","Sopa / pescado / fruta"),
+      D("Miércoles","Crema de zanahorias con patata y cebolla","GUISO","Rosada al limón","HORNO","Pan blanco y fruta","Tortilla de patatas / ensalada / lácteo"),
+      D("Jueves","Lentejas con verdura y chorizo","GUISO","Revuelto de queso, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Puré de patatas / pollo plancha / lácteo"),
+      D("Viernes","Ensaladilla rusa","FRESCO","Flamenquín con tomate aliñado","FRITO","Pan blanco y lácteo","Tortilla de queso / pechuga de pavo / fruta"),
+    ]},
+    { label:"Semana 2", range:"12 – 16 oct", days:[
+      Festivo("Lunes"),
+      D("Martes","Crema de verduras (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / ensalada / lácteo"),
+      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Tortilla de York / lácteo"),
+      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, atún, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Puré de patatas / york / fruta"),
+      D("Viernes","Arroz con pollo y verduras","GUISO","Revuelto de atún","REHOGADO","Pan blanco y lácteo","Sopa / pechuga plancha / fruta"),
+    ]},
+    { label:"Semana 3", range:"19 – 23 oct", days:[
+      D("Lunes","Ensaladilla rusa","FRESCO","Lomo de cerdo a la plancha con tomate aliñado","PLANCHA","Pan blanco y fruta","Tortilla / pechuga de pavo / lácteo"),
+      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones boloñesa de pollo con queso","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
+      D("Miércoles","Arroz tres delicias (arroz, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo"),
+      D("Jueves","Judías blancas con patata, zanahoria, tomate, pimiento, cebolla, ajo y chorizo","GUISO","Revuelto de queso, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
+      D("Viernes","Pollo asado con patatas","GUISO","Ensalada de lechuga y pepino","FRESCO","Pan blanco y lácteo","Pizza / fruta"),
+    ]},
+    { label:"Semana 4", range:"26 – 30 oct", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Pavo / ensalada / yogur"),
+      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
+      D("Miércoles","Potaje de garbanzos con verduras y chorizo","GUISO","Rosada al horno con tomate aliñado","HORNO","Pan blanco y fruta","Judías verdes / pescado / lácteo"),
+      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y maíz","REHOGADO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
+      D("Viernes","Arroz integral con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo","Tortilla de york / ensalada / fruta"),
+    ]},
+  ],
+  lactosa: [
+    { label:"Semana 1", range:"5 – 9 oct", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan blanco y fruta","Pescado / ensalada / lácteo sin lactosa"),
+      D("Martes","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan integral y fruta","Sopa / pescado / fruta"),
+      D("Miércoles","Crema de zanahorias con patata y cebolla","GUISO","Rosada al limón","HORNO","Pan blanco y fruta","Tortilla de patatas / ensalada / lácteo sin lactosa"),
+      D("Jueves","Revuelto de queso sin lactosa, ensalada de lechuga, zanahoria y tomate","REHOGADO","Lentejas con verdura y chorizo","GUISO","Pan integral y fruta","Puré de patatas / pollo plancha / lácteo sin lactosa"),
+      D("Viernes","Ensaladilla rusa","FRESCO","Flamenquín con tomate aliñado","FRITO","Pan blanco y lácteo sin lactosa","Tortilla de queso sin lactosa / pechuga de pavo / fruta"),
+    ]},
+    { label:"Semana 2", range:"12 – 16 oct", days:[
+      Festivo("Lunes"),
+      D("Martes","Crema de verduras (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / ensalada / lácteo sin lactosa"),
+      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Tortilla de York / lácteo sin lactosa"),
+      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, atún, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Puré de patatas / york / fruta"),
+      D("Viernes","Arroz con pollo y verduras","GUISO","Revuelto de atún","REHOGADO","Pan blanco y lácteo sin lactosa","Sopa / pechuga plancha / fruta"),
+    ]},
+    { label:"Semana 3", range:"19 – 23 oct", days:[
+      D("Lunes","Ensaladilla rusa","FRESCO","Lomo de cerdo a la plancha con tomate aliñado","PLANCHA","Pan blanco y fruta","Tortilla / pechuga de pavo / lácteo sin lactosa"),
+      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones boloñesa de pollo con queso sin lactosa","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
+      D("Miércoles","Arroz tres delicias (arroz, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo sin lactosa"),
+      D("Jueves","Judías blancas con patata, zanahoria, tomate, pimiento, cebolla, ajo y chorizo","GUISO","Revuelto de queso sin lactosa, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
+      D("Viernes","Pollo asado con patatas","GUISO","Ensalada de lechuga y pepino","FRESCO","Pan blanco y lácteo sin lactosa","Pizza / fruta"),
+    ]},
+    { label:"Semana 4", range:"26 – 30 oct", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Pavo / ensalada / lácteo sin lactosa"),
+      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
+      D("Miércoles","Potaje de garbanzos con verduras y chorizo","GUISO","Rosada al horno con tomate aliñado","HORNO","Pan blanco y fruta","Judías verdes / pescado / lácteo sin lactosa"),
+      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y maíz","REHOGADO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
+      D("Viernes","Arroz integral con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo sin lactosa","Tortilla de york / ensalada / fruta"),
+    ]},
+  ],
+};
+
+let variant = 'general';
 let active = 0;
 
+const switchEl = document.getElementById('variant-switch');
+const tabsEl = document.getElementById('tabs');
+const gridEl = document.getElementById('days-grid');
+
+function renderSwitch(){
+  switchEl.innerHTML = `
+    <button class="variant-btn ${variant==='general'?'active':''}" data-v="general">Menú general</button>
+    <button class="variant-btn ${variant==='lactosa'?'active':''}" data-v="lactosa">Sin lactosa</button>
+  `;
+  switchEl.querySelectorAll('.variant-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{ variant = btn.dataset.v; renderSwitch(); renderTabs(); renderDays(); });
+  });
+}
+
 function renderTabs(){
+  const weeks = DATA[variant];
   tabsEl.innerHTML = weeks.map((w,i) =>
     `<button class="tab ${i===active?'active':''}" data-i="${i}">${w.label}<span>${w.range}</span></button>`
   ).join('');
@@ -342,16 +240,14 @@ function renderTabs(){
   });
 }
 
-const cenaIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="#F4876B" stroke-width="2"><path d="M4 21V13a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v8"/><path d="M9 8V3M15 8V3"/></svg>`;
-
-function dishBlock(num, dish){
-  const allergensHtml = dish.all.length
-    ? `<div class="allergens">${dish.all.map(a=>`<span class="allergen">${a}</span>`).join('')}</div>`
-    : '';
-  return `<div class="dish"><span class="num">${num}</span><p>${dish.text}</p>${allergensHtml}</div>`;
+function dishBlock(num, pair){
+  const [text, method] = pair;
+  const methodHtml = method ? `<span class="method">${method}</span>` : '';
+  return `<div class="dish"><span class="num">${num}</span><p>${text}</p>${methodHtml}</div>`;
 }
 
 function renderDays(){
+  const weeks = DATA[variant];
   const week = weeks[active];
   gridEl.classList.remove('fade-in'); void gridEl.offsetWidth; gridEl.classList.add('fade-in');
   gridEl.innerHTML = week.days.map((d,i)=>{
@@ -361,18 +257,19 @@ function renderDays(){
            ${dishBlock('2º', d.comedor.p2)}
            <div class="extras">${d.comedor.extras}</div>
          </div>`
-      : `<div class="no-comedor">Sin datos de comedor para este día.</div>`;
+      : `<div class="no-comedor">🎉 Día festivo — sin servicio de comedor.</div>`;
+    const cenaHtml = d.cena
+      ? `<div class="cena"><div class="tag">🌙 Propuesta de cena</div><p>${d.cena}</p></div>`
+      : '';
     return `<div class="day-card">
-      <div class="day-name" style="background:${dayColors[i]}">${d.name}</div>
+      <div class="day-name" style="background:${DAY_COLORS[i]}">${d.name}</div>
       ${comedorHtml}
-      <div class="cena">
-        <div class="tag">${cenaIcon} En casa esta noche</div>
-        <p>${d.cena}</p>
-      </div>
+      ${cenaHtml}
     </div>`;
   }).join('');
 }
 
+renderSwitch();
 renderTabs();
 renderDays();
 </script>
