@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menú del comedor · Octubre · CEIP Colón</title>
+<title>Menú del comedor · Noviembre · CEIP Colón</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
@@ -116,8 +116,8 @@
 <div class="ceipcolon-menu">
   <div class="hero">
     <div class="hero-eyebrow">C.E.I.P. Colón · Creciendo contigo</div>
-    <h1>Menú del comedor — Octubre</h1>
-    <div class="dates">Octubre 2026</div>
+    <h1>Menú del comedor — Noviembre</h1>
+    <div class="dates">Noviembre 2026</div>
   </div>
 
   <div class="variant-switch" id="variant-switch"></div>
@@ -152,63 +152,77 @@ function Festivo(name){ return { name, comedor: null, cena: null }; }
 
 const DATA = {
   general: [
-    { label:"Semana 1", range:"5 – 9 oct", days:[
-      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan blanco y fruta","Pescado / ensalada / lácteo"),
-      D("Martes","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan integral y fruta","Sopa / pescado / fruta"),
-      D("Miércoles","Crema de zanahorias con patata y cebolla","GUISO","Rosada al limón","HORNO","Pan blanco y fruta","Tortilla de patatas / ensalada / lácteo"),
-      D("Jueves","Lentejas con verdura y chorizo","GUISO","Revuelto de queso, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Puré de patatas / pollo plancha / lácteo"),
-      D("Viernes","Ensaladilla rusa","FRESCO","Flamenquín con tomate aliñado","FRITO","Pan blanco y lácteo","Tortilla de queso / pechuga de pavo / fruta"),
-    ]},
-    { label:"Semana 2", range:"12 – 16 oct", days:[
+    { label:"Semana 1", range:"2 – 6 nov", days:[
       Festivo("Lunes"),
-      D("Martes","Crema de verduras (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / ensalada / lácteo"),
-      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Tortilla de York / lácteo"),
-      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, atún, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Puré de patatas / york / fruta"),
-      D("Viernes","Arroz con pollo y verduras","GUISO","Revuelto de atún","REHOGADO","Pan blanco y lácteo","Sopa / pechuga plancha / fruta"),
+      D("Martes","Hélices vegetales con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan integral y fruta","Pescado / ensalada / lácteo"),
+      D("Miércoles","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan blanco y fruta","Tomate / pollo plancha / fruta"),
+      D("Jueves","Crema de zanahorias con patata y cebolla","GUISO","Rosada al vino","HORNO","Pan integral y fruta","Tortilla de patatas / tomate / lácteo"),
+      D("Viernes","Sopa de arroz con merluza","GUISO","Revuelto de queso, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan blanco y lácteo","Ensalada completa / pechuga de pavo / fruta"),
     ]},
-    { label:"Semana 3", range:"19 – 23 oct", days:[
-      D("Lunes","Ensaladilla rusa","FRESCO","Lomo de cerdo a la plancha con tomate aliñado","PLANCHA","Pan blanco y fruta","Tortilla / pechuga de pavo / lácteo"),
-      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones boloñesa de pollo con queso","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
-      D("Miércoles","Arroz tres delicias (arroz, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo"),
-      D("Jueves","Judías blancas con patata, zanahoria, tomate, pimiento, cebolla, ajo y chorizo","GUISO","Revuelto de queso, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
+    { label:"Semana 2", range:"9 – 13 nov", days:[
+      D("Lunes","Lentejas con verdura (tomate, pimiento, ajo, patata, calabaza, zanahoria y chorizo)","GUISO","Croquetas de espinacas con tomate aliñado","FRITO","Pan blanco y fruta","Puré de patatas / pollo plancha / lácteo"),
+      D("Martes","Crema de verduras con patatas (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / tortilla francesa / lácteo"),
+      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla con ensalada de lechuga y maíz","FRESCO","Pan blanco y fruta","Patatas cocidas aliñadas / lomo plancha / fruta"),
+      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, caballa, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Tortilla de York / lácteo"),
+      D("Viernes","Arroz con pollo, carrillada y verduras","GUISO","Ensalada de lechuga, zanahoria y tomate","FRESCO","Pan blanco y lácteo","Sopa / pechuga plancha / fruta"),
+    ]},
+    { label:"Semana 3", range:"16 – 20 nov", days:[
+      D("Lunes","Arroz tres delicias (arroz, pavo, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo"),
+      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones integrales boloñesa de pollo con queso","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
+      D("Miércoles","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo"),
+      D("Jueves","Judías (judías blancas, patatas, zanahorias, tomate, pimiento verde, cebolla, ajo y chorizo)","GUISO","Rosada en salsa de tomate","HORNO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
       D("Viernes","Pollo asado con patatas","GUISO","Ensalada de lechuga y pepino","FRESCO","Pan blanco y lácteo","Pizza / fruta"),
     ]},
-    { label:"Semana 4", range:"26 – 30 oct", days:[
-      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Pavo / ensalada / yogur"),
-      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
-      D("Miércoles","Potaje de garbanzos con verduras y chorizo","GUISO","Rosada al horno con tomate aliñado","HORNO","Pan blanco y fruta","Judías verdes / pescado / lácteo"),
-      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y maíz","REHOGADO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
-      D("Viernes","Arroz integral con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo","Tortilla de york / ensalada / fruta"),
+    { label:"Semana 4", range:"23 – 27 nov", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Pechuga al horno con ensalada de lechuga y maíz","HORNO","Pan blanco y fruta","Pavo / ensalada / yogur"),
+      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún al horno con ensalada de lechuga","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
+      D("Miércoles","Potaje de garbanzos con verduras (zanahoria, patata, ajo, tomate, sofrito) y langostinos","GUISO","Cazón en adobo con tomate aliñado","FRESCO","Pan blanco y fruta","Judías verdes / pescado / lácteo"),
+      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y tomate","FRESCO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
+      D("Viernes","Arroz con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo","Tortilla de york / ensalada / fruta"),
+    ]},
+    { label:"Semana 5", range:"30 nov – 4 dic", days:[
+      D("Lunes","Ensalada completa (caballa, huevo, lechuga y tomate)","FRESCO","Macarrones integrales boloñesa de pollo con queso","HERVIDO","Pan blanco y fruta","Empanadillas / ensalada / lácteo"),
+      D("Martes","Arroz tres delicias con ternera, pollo y gallina","GUISO","Lomo a la plancha con lechuga","PLANCHA","Pan integral y fruta","Tortilla de patatas / queso fresco / fruta"),
+      D("Miércoles","Cocido de verduras con ternera, pollo y gallina","GUISO","Ensalada mixta (lechuga, tomate, caballa, aceituna, maíz)","FRESCO","Pan blanco y fruta","Consomé / merluza con ajo y perejil / lácteo"),
+      D("Jueves","Lentejas con verdura","GUISO","Revuelto de caballa","REHOGADO","Pan integral y fruta","Sopa / pechuga plancha / fruta"),
+      D("Viernes","Cazuela de marisco (preparado de marisco, fideos, sofrito, cúrcuma, caella)","GUISO","Ensalada de lechuga, tomate y aceitunas","FRESCO","Pan blanco y lácteo","Crema de verduras / york / fruta"),
     ]},
   ],
   lactosa: [
-    { label:"Semana 1", range:"5 – 9 oct", days:[
-      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan blanco y fruta","Pescado / ensalada / lácteo sin lactosa"),
-      D("Martes","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan integral y fruta","Sopa / pescado / fruta"),
-      D("Miércoles","Crema de zanahorias con patata y cebolla","GUISO","Rosada al limón","HORNO","Pan blanco y fruta","Tortilla de patatas / ensalada / lácteo sin lactosa"),
-      D("Jueves","Revuelto de queso sin lactosa, ensalada de lechuga, zanahoria y tomate","REHOGADO","Lentejas con verdura y chorizo","GUISO","Pan integral y fruta","Puré de patatas / pollo plancha / lácteo sin lactosa"),
-      D("Viernes","Ensaladilla rusa","FRESCO","Flamenquín con tomate aliñado","FRITO","Pan blanco y lácteo sin lactosa","Tortilla de queso sin lactosa / pechuga de pavo / fruta"),
-    ]},
-    { label:"Semana 2", range:"12 – 16 oct", days:[
+    { label:"Semana 1", range:"2 – 6 nov", days:[
       Festivo("Lunes"),
-      D("Martes","Crema de verduras (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / ensalada / lácteo sin lactosa"),
-      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Tortilla de York / lácteo sin lactosa"),
-      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, atún, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Puré de patatas / york / fruta"),
-      D("Viernes","Arroz con pollo y verduras","GUISO","Revuelto de atún","REHOGADO","Pan blanco y lácteo sin lactosa","Sopa / pechuga plancha / fruta"),
+      D("Martes","Hélices vegetales con tomate y atún","HERVIDO","Carrillada con menestra","GUISO","Pan integral y fruta","Pescado / ensalada / lácteo sin lactosa"),
+      D("Miércoles","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan blanco y fruta","Tomate / pollo plancha / fruta"),
+      D("Jueves","Crema de zanahorias con patata y cebolla","GUISO","Rosada al vino","HORNO","Pan integral y fruta","Tortilla de patatas / tomate / lácteo sin lactosa"),
+      D("Viernes","Sopa de arroz con merluza","GUISO","Revuelto de queso sin lactosa, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan blanco y lácteo sin lactosa","Ensalada completa / pechuga de pavo / fruta"),
     ]},
-    { label:"Semana 3", range:"19 – 23 oct", days:[
-      D("Lunes","Ensaladilla rusa","FRESCO","Lomo de cerdo a la plancha con tomate aliñado","PLANCHA","Pan blanco y fruta","Tortilla / pechuga de pavo / lácteo sin lactosa"),
-      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones boloñesa de pollo con queso sin lactosa","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
-      D("Miércoles","Arroz tres delicias (arroz, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo sin lactosa"),
-      D("Jueves","Judías blancas con patata, zanahoria, tomate, pimiento, cebolla, ajo y chorizo","GUISO","Revuelto de queso sin lactosa, ensalada de lechuga, zanahoria y tomate","REHOGADO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
+    { label:"Semana 2", range:"9 – 13 nov", days:[
+      D("Lunes","Lentejas con verdura (tomate, pimiento, ajo, patata, calabaza, zanahoria y chorizo)","GUISO","Croquetas de espinacas con tomate aliñado","FRITO","Pan blanco y fruta","Puré de patatas / pollo plancha / lácteo sin lactosa"),
+      D("Martes","Crema de verduras con patatas (puerro, calabacín, zanahoria, patata)","GUISO","Pinchitos de pollo con lechuga","PLANCHA","Pan integral y fruta","Pescado / tortilla francesa / lácteo sin lactosa"),
+      D("Miércoles","Cazuela de marisco con fideos integrales","GUISO","Revuelto de huevo y cebolla con ensalada de lechuga y maíz","FRESCO","Pan blanco y fruta","Patatas cocidas aliñadas / lomo plancha / fruta"),
+      D("Jueves","Cocido de verduras con ternera y gallina","GUISO","Ensalada mixta (lechuga, caballa, zanahoria, tomate y maíz)","FRESCO","Pan integral y fruta","Tortilla de York / lácteo sin lactosa"),
+      D("Viernes","Arroz con pollo, carrillada y verduras","GUISO","Ensalada de lechuga, zanahoria y tomate","FRESCO","Pan blanco y lácteo sin lactosa","Sopa / pechuga plancha / fruta"),
+    ]},
+    { label:"Semana 3", range:"16 – 20 nov", days:[
+      D("Lunes","Arroz tres delicias (arroz, pavo, zanahoria, huevo, maíz)","REHOGADO","Merluza en salsa verde con ensalada de lechuga","HORNO","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo sin lactosa"),
+      D("Martes","Ensalada con lechuga, caballa, zanahoria, tomate y maíz","FRESCO","Macarrones integrales boloñesa de pollo con queso sin lactosa","HERVIDO","Pan integral y fruta","Empanadillas / tomate en rodajas / fruta"),
+      D("Miércoles","Sopa de fideos integrales con pollo","GUISO","Revuelto de habichuelillas","","Pan blanco y fruta","Revuelto de espinacas / pavo / lácteo sin lactosa"),
+      D("Jueves","Judías (judías blancas, patatas, zanahorias, tomate, pimiento verde, cebolla, ajo y chorizo)","GUISO","Rosada en salsa de tomate","HORNO","Pan integral y fruta","Flamenquín / ensalada / fruta"),
       D("Viernes","Pollo asado con patatas","GUISO","Ensalada de lechuga y pepino","FRESCO","Pan blanco y lácteo sin lactosa","Pizza / fruta"),
     ]},
-    { label:"Semana 4", range:"26 – 30 oct", days:[
-      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Revuelto de huevo y cebolla, ensalada de lechuga y maíz","REHOGADO","Pan blanco y fruta","Pavo / ensalada / lácteo sin lactosa"),
-      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
-      D("Miércoles","Potaje de garbanzos con verduras y chorizo","GUISO","Rosada al horno con tomate aliñado","HORNO","Pan blanco y fruta","Judías verdes / pescado / lácteo sin lactosa"),
-      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y maíz","REHOGADO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
-      D("Viernes","Arroz integral con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo sin lactosa","Tortilla de york / ensalada / fruta"),
+    { label:"Semana 4", range:"23 – 27 nov", days:[
+      D("Lunes","Ensalada de pasta integral con tomate y atún","HERVIDO","Pechuga al horno con ensalada de lechuga y maíz","HORNO","Pan blanco y fruta","Pavo / ensalada / lácteo sin lactosa"),
+      D("Martes","Estofado de patatas con ternera","GUISO","Empanadilla de atún al horno con ensalada de lechuga","HORNO","Pan integral y fruta","Pescado / huevo duro / fruta"),
+      D("Miércoles","Potaje de garbanzos con verduras y langostinos","GUISO","Cazón en adobo con tomate aliñado","FRESCO","Pan blanco y fruta","Judías verdes / pescado / lácteo sin lactosa"),
+      D("Jueves","Crema de calabaza (calabaza, puré de verduras, AOVE, sal)","GUISO","Revuelto de huevo y patatas con ensalada de lechuga y tomate","FRESCO","Pan integral y fruta","Pescado / puré de patatas / fruta"),
+      D("Viernes","Arroz con tomate","HERVIDO","Merluza con ensalada de lechuga y tomate","HORNO","Pan blanco y lácteo sin lactosa","Tortilla de york / ensalada / fruta"),
+    ]},
+    { label:"Semana 5", range:"30 nov – 4 dic", days:[
+      D("Lunes","Ensalada completa (caballa, huevo, lechuga y tomate)","FRESCO","Macarrones integrales boloñesa de pollo con queso sin lactosa","HERVIDO","Pan blanco y fruta","Empanadillas / ensalada / lácteo sin lactosa"),
+      D("Martes","Arroz tres delicias con ternera, pollo y gallina","GUISO","Lomo a la plancha con lechuga","PLANCHA","Pan integral y fruta","Tortilla de patatas / queso fresco sin lactosa / fruta"),
+      D("Miércoles","Cocido de verduras con ternera, pollo y gallina","GUISO","Ensalada mixta (lechuga, tomate, caballa, aceituna, maíz)","FRESCO","Pan blanco y fruta","Consomé / merluza con ajo y perejil / lácteo sin lactosa"),
+      D("Jueves","Lentejas con verdura","GUISO","Revuelto de caballa","REHOGADO","Pan integral y fruta","Sopa / pechuga plancha / fruta"),
+      D("Viernes","Cazuela de marisco (preparado de marisco, fideos, sofrito, cúrcuma, caella)","GUISO","Ensalada de lechuga, tomate y aceitunas","FRESCO","Pan blanco y lácteo sin lactosa","Crema de verduras / york / fruta"),
     ]},
   ],
 };
